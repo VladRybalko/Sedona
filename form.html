@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="utf-8">
+    <title>Добро пожаловать в Седону</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+        <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a>Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a>Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a>HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image"
+          src="img/logotyle-mobile.svg.svg" width="102" height="83"
+          alt="Добро пожаловать в Седону">
+      </a>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Добро пожаловать в городок Седона
+      </h1>
+
+      <section class="review">
+          <h2 class="visually-hidden">Форма отзыва</h2>
+            <b class="review__title">Оставьте свой отзыв</b>
+              <p class="review__intro">Помогите нашим отелям стать лучше!
+                оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <section class="review-personal">
+        <h2 class="review-personal__title">Представьтесь:</h2>
+        <form class="review-personal__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="review-personal__item">
+            <label for="review-name">Имя*:</label>
+            <input id="review-name" type="text" name="name" value="" placeholder="Петр">
+          </p>
+          <p class="review-personal__item">
+            <label for="review-surname">Фамилия*:</label>
+            <input id="review-surname" type="text" name="surname" value="" placeholder="Иванов">
+          </p>
+          <p class="review-personal__item">
+            <label for="review-patronymic">Отчество</label>
+            <input id="review-patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
+          </p>
+        </form>
+      </section>
+      <section class="review-contacts">
+        <h2 class="review-contacts__title">Контактная информация:</h2>
+        <form class="review-contacts__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="review-contacts__item">
+            <label for="review-name">Имя*:</label>
+            <input id="review-name" type="text" name="name" value="" placeholder="Петр">
+          </p>
+          <p class="review-contacts__item">
+            <label for="review-surname">Фамилия*:</label>
+            <input id="review-surname" type="text" name="surname" value="" placeholder="Иванов">
+          </p>
+          <p class="review-contacts__item">
+            <label for="review-patronymic">Отчество</label>
+            <input id="review-patronymic" type="text" name="patronymic" value="" placeholder="Александрович">
+          </p>
+        </form>
+      </section>
+
+    </main>
+  </body>
+</html>
 
