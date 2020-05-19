@@ -1,0 +1,234 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+/**/
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+/**/
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+
+    /*Disable Animation on Mobile Devices*/
+    .animated {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+
+    // Стили модального окна
+    .modal-callbak {
+        margin-top: -155px;
+        width: 470px;
+        margin-left: -235px;
+    }
+
+    // Стили модального окна
+    // Стили окна благодарности
+    .modal-thank {
+        margin-top: -140px;
+        width: 316px;
+        height: 280px;
+        margin-left: -158px;
+        padding: 5px;
+    }
+
+    // Стили окна благодарности
+
+    .menu {
+        &-link {
+            z-index: 9;
+            display: block;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 24px;
+            right: 25px;
+
+            span,
+            span:before,
+            span:after {
+                display: block;
+                width: 30px;
+                height: 3px;
+                background-color: #ffffff;
+                position: absolute;
+                left: 50%;
+                margin-left: -15px;
+                top: 50%;
+                margin-top: -1px;
+
+            }
+
+            span:before {
+                content: '';
+                margin-top: -9px;
+                transition: all 0.2s;
+            }
+
+            span:after {
+                content: '';
+                margin-top: 5px;
+                transition: all 0.2s;
+            }
+
+            &_active span {
+                background-color: transparent;
+
+                &:before {
+                    transform: rotate(45deg);
+                    margin-top: 0;
+                }
+
+                &:after {
+                    transform: rotate(-45deg);
+                    margin-top: 0;
+                }
+            }
+        }
+
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 100vw;
+        transition: all 0.5s;
+        top: 0;
+
+        ul {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+
+            a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .menu {
+        ul {
+            li {
+                a {
+                    &:hover {
+                        text-decoration: none;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu_active {
+        left: 0vw;
+    }
+
+    .main-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+        }
+    }
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+
+    // Стили модального окна
+    .modal-callbak {
+        margin-top: -160px;
+        width: 320px;
+        height: 320px;
+        margin-left: -160px;
+    }
+
+    // Стили модального окна
+    // Стили окна благодарности
+    .modal-thank {
+        margin-top: -160px;
+        width: 320px;
+        height: 320px;
+        margin-left: -160px;
+    }
+
+    // Стили окна благодарности
+}
+
+/**/
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+/**/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+/**/
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+/**/
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+/**/
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+/**/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+/**/

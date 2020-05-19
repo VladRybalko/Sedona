@@ -1,0 +1,32 @@
+/* font-family: "Geometria-Bold"; */
+@font-face {
+	font-family: "Geometria-Bold";
+	src: url("../fonts/Geometria-Bold.eot");
+	src: url("../fonts/Geometria-Bold.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/Geometria-Bold.woff") format("woff"),
+		url("../fonts/Geometria-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "Geometria"; */
+@font-face {
+	font-family: "Geometria";
+	src: url("../fonts/Geometria.eot");
+	src: url("../fonts/Geometria?#iefix")format("embedded-opentype"),
+		url("../fonts/Geometria.woff") format("woff"),
+		url("../fonts/RobotoLight/Geometria.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "Geometria-ExtraBold"; */
+@font-face {
+	font-family: "Geometria-ExtraBold";
+	src: url("../fonts/Geometria-ExtraBold.eot");
+	src: url("../fonts/Geometria-ExtraBold.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/Geometria-ExtraBold.woff") format("woff"),
+		url("../fonts/Geometria-ExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
